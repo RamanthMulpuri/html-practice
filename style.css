@@ -1,9 +1,103 @@
-main {
-  min-width: 63em;
-  max-width: 75em;
-  margin: 0 auto;
+* {
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  padding: 1em;
+  background-color: mintcream;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+section > div {
+  flex: 1 0 15em;
+  padding: 1em;
+  border: 1px solid;
+  width: 25%;
+  box-sizing: border-box;
+}
+
 .container {
   position: relative;
   border: 1px dotted;
+}
+
+@supports (grid-template-columns: subgrid) {
+  section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+    grid-template-rows: repeat(4, auto);
+    align-content: start;
+  }
+  
+  section > div {
+    width: initial;
+    grid-row: 1 / -1;
+    display: grid;
+    grid-template-rows: subgrid;
+  }
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  opacity: 0.75;
+  border: 2px solid blue;
+  background-color: dodgerblue;
+  display: flex;
+  text-align: center;
+}
+
+.positioned {
+  border: 2px solid green;
+  background-color: limegreen;
+}
+
+.absolute .positioned {
+  position: absolute;
+  right: 0;
+}
+
+.fixed .positioned {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+
+
+.top .positioned {
+  position: sticky;
+  top: 1em;
+}
+
+.bottom .positioned {
+  position: sticky;
+  bottom: 1em;
+}
+
+.left .container,
+.right .container {
+  overflow-x: scroll;
+}
+
+.scroll-wrap {
+  width: 600px;
+  display: flex;
+}
+
+.left .positioned {
+  position: sticky;
+  left: 1em;
+}
+
+.right .positioned {
+  position: sticky;
+  right: 1em;
 }
