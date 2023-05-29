@@ -1,155 +1,108 @@
 <!DOCTYPE html>
 <html>
+   <head>
+      <title>positions</title>
+      <meta charset="utf-8"/>
+      <link rel="stylesheet" href="css/style.css">
+    </head>
+   <body>
+     
 
-<head>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>metbus</title>
-</head>
-
-<body>
-    <header class="fix">
-        <div class="container">
-            <div class="logo">
-                <img src="images/Logo2.png">
-            </div>
-            <div class="header_right">
-                <i class="fa fa-envelope"></i>
-                <span>info@mietbus24.com</span>
-                <i class="fa fa-phone"></i>
-                <span>040 - 555 02 999 0</span>
-            </div>
-
-        </div>
-    </header>
-    <div class="container">
-        <div class="nav-info">
-            <nav>
-                <ul>
-                    <li><a>Start</a></li>
-                    <li><a>Busanfrag</a></li>
-                    <li><a>leistungen</a></li>
-                    <li><a>Überuns</a></li>
-                    <li><a> Kontakt</a></li>
-                    <li><a>FAQ</a></li>
-                </ul>
-            </nav>
-
-
-        </div>
+<main>
+  <section>
+    <div class="static">
+      <h2><code>position: static</code></h2>
+  
+      <div class="container">
+        <div class="box"></div>
+        <div class="box positioned"><span>static</span></div>
+        <div class="box"></div>
+      </div>
     </div>
 
-    <div class="Bild">
-        <img src="images/Ebene-11.jpg" alt="">
-        <div class="image-overlay">
-            <img src="images/Kalender2.png" alt="">
-        </div>
-
+    <div class="relative">
+      <h2><code>position: relative</h2></code>
+      
+      <div class="container">
+        <div class="box"></div>
+        <div class="box positioned"><span>relative</span></div>
+        <div class="box"></div>
+      </div>
     </div>
-    <div class="parent container">
-        <div class="left-section">
-                <div class="left">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/6pENjmVfLYI"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-                </div>
 
-                <div class="vide-info">
-                    <h1>Vom Achtsitzer <br> bis zum Luxusliner!</h1>
-                    <br>
-                    <p>Starten Sie mit Ihrem Wunschbus durch! mietbus24.com ist  Ihr <br> erfahrener und zuverlässiger Partner
-                        für
-                        europaweite Busvermietungen und internationale Bustransfers.</p>
-                    <br>
-                    <p>Sie bestimmen, wohin und wie Sie verreisen möchten, mietbus24.com vermittelt Ihnen den dafür
-                        passenden <br>
-                        Bus. Ob Kurztrip, Flughafentransfer, Ausflug, bequeme Bustour, Messetransfer, Kurzstrecke oder
-                        lange
-                        Reise Mieten Sie bei uns jede erdenkliche Form von Bussen für Ihre Busreise.
-                    </p>
-                    <br><br>
-                    <p>Wir richten uns nach Ihren individuellen Bedürfnissen und das zu fairen Preisen. Ob Klassenfahrt
-                        oder
-                        Großevent Bei uns finden Sie garantiert den passenden Mietbus für eine angenehme Busreise vom
-                        Format
-                        S
-                        bis XXL!
-                        Informieren Sie sich über unsere Leistungen, stöbern Sie in unserer Fahrzeugflotte und erfahren
-                        Sie
-                        mehr
-                        über das Busunternehmen Mietbus24.
-                    </p>
-
-                </div>
-        </div>
-        <div class="right-section">
-            <section class="box-1">
-                <h1>Ihre Vorteile auf<br>
-                    einen Blick!</h1>
-                <ul>
-                 <li><img src="images/check.png"> Europaweit</li>
-                    <br>
-                    <li><img src="images/check.png"> preis</li>
-                    <br>
-                    <li><img src="images/check.png"> Fahrzeugfiotte von<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;S bis XXL</li>
-                    <br>
-                    <li><img src="images/check.png"> Angebote</li>
-                </ul>
-                </section>
-            <br> <br>
-            <section class="box-2">
-            <h1>Wünschen Sie<br>
-                Beratung?</h1>
-                <p>Gerne beraten wir Sie auch<br> persönlich. </p>
-                <br>
-                <p>Schreiben Sie uns oder rufen Sie <br>uns an</p>
-                  
-
-            </section>
-            <br> <br>
-            <section class="box-3">
-                <h1>Unsere Partner</h1>
-                <img src="images/Ebene-4.png" alt="">
-                <br>
-                <img src="images/Ebene-2.jpg">
-                <br> <br>
-                <img src="images/Ebene-3.jpg">
-            </section>
-        </div>
+    <div class="absolute">
+      <h2><code>position: absolute</code></h2>
+      
+      <div class="container">
+        <div class="box"></div>
+        <div class="box positioned"><span>absolute</span></div>
+        <div class="box"></div>
+      </div>
     </div>
-    <footer>
-        <div class="container">
-        <div class="last-section">
-            <div class="reisen">
-                <h2>Reisen</h2>
-                <p>Spanien, Italien, Ungarn oder Frankreich, ob Jugend-, Klassen- oder Gruppenreise, Bus-, Flug- oder Eigenanreise - alles ist möglich!</p>
-                <div class="last1">Jetzt auswählen</div>
-                </div>
-                <div class="service">
-                <h2>24h-Service</h2>
-                <p>Ob bei Tag oder Nacht – Wir sind 24 Stunden rund um die Uhr für Sie da. Überzeugen Sie sich jetzt von unserem 24h-Service.</p>
-                <div class="last2">Serviceangebot</div>
-                </div>
-                <div class="fragen">
-                <h2>Fragen?</h2> 
-                <p>Sie haben noch Fragen? Wollen sich nochmal einen Überblick verschaffen? Dann helfen Ihnen die FAQ schnell weiter.</p>
-                <div class="last3">Fragen klären</div>
-            </div>
-        </div>
-    </div>
-        <div class="footer-section">
-            <div class="container">
-               <div class="copy">
-                  <div class="met">Copyright © 2014 mietbus24</div>
-                  <div class="faq">frage ·  Kontakt ·  FAQ ·  AGB ·  Impressum</div>
-               </div> 
-            </div>
-        </div>
-       </footer>  
-    
-</body>
 
-</html>
+    <div class="fixed">
+      <h2><code>position: fixed</code></h2>
+      
+      <div class="container">
+        <div class="box"></div>
+        <div class="box positioned"><span>fixed</span></div>
+        <div class="box"></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sticky top">
+      <h2><code>position: sticky</code> (top)</h2> 
+      
+      <div class="container">
+        <div class="box"></div>
+        <div class="box positioned"><span>sticky (top)</span></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+    </div>
+
+    <div class="sticky bottom">
+      <h2><code>position: sticky</code> (bottom)</h2>
+      
+      <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box positioned"><span>sticky (bottom)</span></div>
+        <div class="box"></div>
+      </div>
+    </div>
+
+    <div class="sticky left">
+      <h2><code>position: sticky</code> (left)</h2>
+      
+      <div class="container">
+        <div class="scroll-wrap">
+          <div class="box"></div>
+          <div class="box positioned"><span>sticky (left)</span></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sticky right">
+      <h2><code>position: sticky</code> (right)</h2>
+   
+      <div class="container">
+        <div class="scroll-wrap">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box positioned"><span>sticky (right)</span></div>
+          <div class="box"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+ 
