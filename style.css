@@ -1,104 +1,165 @@
-
-* {
-  margin: 0;
-  padding: 0;
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+header.fix{
+    position: -webkit-sticky;
+    position: sticky;
 }
 
-body {
-  padding: 1em;
-  background-color: mintcream;
+.logo{
+    float:left;
+    padding: 25px;
+}
+.top-row p{
+    color: white;
+    position: absolute;
+    width: 130px;
+    font-size: large;
+    padding: 5px;
+    margin: -245px 5px 5px 8px;
+
+}
+.top-2 p{
+    color: white;
+    position: absolute;
+    width: 130px;
+    font-size: large;
+    padding: 5px;
+    margin: -245px 5px 25px 50px;
+
+}
+.top-row p{
+    background-color: black;
 }
 
-section {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: white;
+nav ul li{
+    float:right;
+    text-decoration: none;
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    padding: 25px;
+    margin: 5px;
+    
 }
 
-section > div {
-  flex: 1 0 15em;
-  padding: 1em;
-  border: 1px solid;
-  width: 25%;
-  box-sizing: border-box;
+.Bild img{
+    width:100%;
+    height: 700px;
+    
 }
-
-.container {
-  position: relative;
-  border: 1px dotted;
+ .Bild .image-overlay span{
+    position: absolute;
+    top: 51%;
+    left: 42%;
+    font-size: 50px;
+    color: #fff;
 }
-
-@supports (grid-template-columns: subgrid) {
-  section {
+span b{
+    background-color: black;
+}
+.projects h2{
+    padding: 35px;
+    }
+a img{
+    padding:5px;
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
-    grid-template-rows: repeat(4, auto);
-    align-content: start;
+}
+.top-row{
+    padding: 15px;
+}
+.top-2{
+    padding: 10px;
+    
+}
+
+.top-row{
+    display: flex;
+    justify-content: flex-start;
+
+}
+.top-2{
+    display: flex;
+    justify-content: flex-start;
+}
+.top-2 p{
+    background-color: black;
+}
+.About{
+    padding: 35px;
+}
+.About p{
+    font-size: larger;
+     margin: 15px;
+} 
+ .row-1{
+    display: flex;
+    
+ }
+ i img{
+    padding: 5px;
+    width: 100%;
+ }
+ .row-1{
+    padding: 5px;
+ }
+ .row-1 p{
+    padding-bottom: 25px;
+    
+ }
+ .row-1 h3{
+    padding: 8px;
+
+ }
+ .row-1 p{
+    padding: 8px;
+}
+.row-1 input{
+    padding: 5px;
+    padding-right: 80px;
+    font-size: large;
+    text-align: center;
+    
+}
+.row-1 a {
+    padding: 8px;
+}
+.Contact h2{
+    padding:35px;
+}
+  .forms{
+    padding: 25px;
+  }
+ .forms input{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    
+ }
+  .forms a input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display:inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+ .forms i input {
+    width: 150px;
+    background-color:black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    
+  }
+  .map img{
+    width: 100%;
+    height: 800px;
+    padding: 15px;
   }
   
-  section > div {
-    width: initial;
-    grid-row: 1 / -1;
-    display: grid;
-    grid-template-rows: subgrid;
-  }
-}
-
-.box {
-  height: 100px;
-  width: 100px;
-  opacity: 0.75;
-  border: 2px solid blue;
-  background-color: dodgerblue;
-  display: flex;
-  text-align: center;
-}
-
-.positioned {
-  border: 2px solid green;
-  background-color: limegreen;
-}
-
-.absolute .positioned {
-  position: absolute;
-  right: 0;
-}
-
-.fixed .positioned {
-  position: fixed;
-  top: 0;
-  right: 0;
-}
-
-
-
-.top .positioned {
-  position: sticky;
-  top: 1em;
-}
-
-.bottom .positioned {
-  position: sticky;
-  bottom: 1em;
-}
-
-.left .container,
-.right .container {
-  overflow-x: scroll;
-}
-
-.scroll-wrap {
-  width: 600px;
-  display: flex;
-}
-
-.left .positioned {
-  position: sticky;
-  left: 1em;
-}
-
-.right .positioned {
-  position: sticky;
-  right: 1em;
-}
