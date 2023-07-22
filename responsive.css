@@ -1,0 +1,109 @@
+@media screen and (max-width: 1199px) {
+    .container{
+        width: 950px;
+    }
+
+    
+}
+
+
+@media screen and (max-width: 979px) {
+    .container{
+        width: 750px;
+    }
+    
+
+    .head span{
+        font-size: 21px;
+    }
+.last span,.blog span,.main-content-right-five span{
+    font-size: 10px;
+}
+.foot p {
+    padding-top: 27px;
+}
+.foot p {
+    width: 281px;
+}
+.main-content-right-five a {
+    color: #34495e;
+    font-size: 12px;
+    line-height: 36px;
+    background-color: #e9eef1;
+    padding: 10px 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0px 0px 0px 0px;
+}
+}
+
+@media screen and (max-width: 767px ) {
+    .container{
+        width: 90%;
+    }
+    
+.head span{
+    padding: 0px 20px;
+}
+img {
+    /* height: 90%; */
+    width: 100%;
+    margin: 20px 0px;
+}
+    main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: block;
+    }
+   
+    .top-2 {
+        margin-top: 55px;
+        display: block;
+        text-align: center;
+    }
+    .last{
+        flex-direction: column;
+    }
+    .blog{
+        margin: 0px 0px 0px 10px;
+        padding: 17px 0px 30px 0px;
+    }
+
+    .main-content-right-five span{
+       margin: 0px 0px -0px -109px;
+    }
+    .links {
+        margin: 0px 0px 0px -69px;
+    }
+     .chef img {
+        max-width: fit-content;
+        padding: 0px 0px 0px 0px;
+        width: 100%;
+    }
+    .About {
+        /* margin: 150px; */
+        text-align: center;
+        /* padding-top: 35px; */
+        margin: 56px 0px;
+    }
+    .who p {
+        text-align: center;
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .About h1{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .last span,.blog span,.main-content-right-five span{
+        font-size: 33px;
+    }
+    .main-content-right-five a {
+       
+        font-size: 14px;
+        
+    }
+    
+     
+}
